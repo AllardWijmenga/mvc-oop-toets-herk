@@ -12,7 +12,7 @@ class PoundForPound extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Top 5 rijkste PoundForPoundsen ter wereld'
+            'title' => 'Men Pound-For-Pound top rank UFC'
         ];
 
         $this->view('PoundForPound/index', $data);
@@ -28,15 +28,16 @@ class PoundForPound extends BaseController
             $tableRows .= "<tr>
                                 <td>$value->Id</td>
                                 <td>$value->Naam</td>
-                                <td>$value->NettoWaarde></td>
-                                <td>$value->Landen</td>
-                                <td>$value->Mobiel</td>
+                                <td>$value->Rankering></td>
+                                <td>$value->Lengte</td>
+                                <td>$value->Gewicht</td>
                                 <td>$value->Leeftijd</td>
+                                <td>$value->WinsByKnockout</td>
                            </tr>";
         }
 
         $data = [
-            'title' => 'Top 5 rijkste PoundForPoundsen ter wereld',
+            'title' => 'Men Pound-For-Pound top rank UFC',
             'tableRows' => $tableRows
         ];
 

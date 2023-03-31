@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 3 mrt 2023 om 9:22
+-- Gegenereerd op: 31 mrt 2023 om 9:22
 -- Serverversie: 5.7.36
 -- PHP-versie: 8.1.0
 
@@ -33,10 +33,11 @@ DROP TABLE IF EXISTS `PoundForPound`;
 CREATE TABLE IF NOT EXISTS `PoundForPound` (
   `Id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `Naam` varchar(100) NOT NULL,
-  `Netto/Waarde` smallint(100) NOT NULL,
-  `Land` varchar(100) NOT NULL,
-  `Mobiel` varchar(20) NOT NULL,
+  `Rankering` smallint(100) NOT NULL,
+  `Lengte` varchar(100) NOT NULL,
+  `Gewicht` varchar(20) NOT NULL,
   `Leeftijd` tinyint(3) NOT NULL,
+  `WinsByKnockout` tinyint(3) NOT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
@@ -44,13 +45,12 @@ CREATE TABLE IF NOT EXISTS `PoundForPound` (
 -- Gegevens worden geëxporteerd voor tabel `PoundForPound`
 --
 
-INSERT INTO `PoundForPound` (`Id`, `Naam`, `Netto/Waarde`, `Land`, `Mobiel`, `Leeftijd`) VALUES
-(1, 'Rihanna', 1400, 'Barbados', '+ 1246 2400 1862400', 35),
-(2, 'Rihanna', 1400, 'Barbados', '+ 1246 2400 1862400', 35),
-(3, 'Madonna', 575, 'Verenigde Staten', '+1 3425 18587', 64),
-(4, 'Taylor Swift', 570, 'Verenigde Staten', '+1 5876 23512', 33),
-(5, 'Beyonce', 420, 'Verenigde Staten', '+1 6794 908465', 41),
-(6, 'Jennifer Lopez', 400, 'Verenigde Staten', '+1 3131 857345', 53);
+INSERT INTO `PoundForPound` (`Id`, `Naam`, `Rankering`, `Lengte`, `Gewicht`, `Leeftijd`, `WinsByKnockout`) VALUES
+(1, 'Jon Jones', 1, '1.93', '112', 35, 10),
+(2, 'Alexander Volkanovski', 2, '1.68', '66', 34, 12),
+(3, 'Islam Makhachev', 3, '1.78', '70', 31, 4),
+(4, 'Leon Edwards', 4, '1.83', '77', 31, 7),
+(5, 'Israel Adesanya', 5, '1.93', '84', 33, 15);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

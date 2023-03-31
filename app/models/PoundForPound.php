@@ -13,10 +13,11 @@ class PoundForPoundModel
     {
         $sql = 'SELECT  Id
                        ,Naam
-                       ,Netto/Waarde
-                       ,Land
-                       ,Mobiel
+                       ,Rankering
+                       ,Lengte
+                       ,Gewicht
                        ,Leeftijd
+                       ,WinsByKnockout
                 FROM    PoundForPound';
 
         $this->db->query($sql);
