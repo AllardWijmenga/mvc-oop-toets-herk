@@ -15,7 +15,7 @@ class PoundForPound extends BaseController
             'title' => 'Men Pound-For-Pound top rank UFC'
         ];
 
-        $this->view('PoundForPound/index', $data);
+        $this->view('PoundForPound/getPoundForPound', $data);
     }
 
 
