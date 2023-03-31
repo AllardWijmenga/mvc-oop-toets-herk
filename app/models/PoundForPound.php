@@ -1,6 +1,6 @@
 <?php
 
-class zangeresModel
+class PoundForPoundModel
 {
     private $db;
 
@@ -9,7 +9,7 @@ class zangeresModel
         $this->db = new Database();
     }
 
-    public function getzangeresen()
+    public function getPoundForPounden()
     {
         $sql = 'SELECT  Id
                        ,Naam
@@ -17,7 +17,7 @@ class zangeresModel
                        ,Land
                        ,Mobiel
                        ,Leeftijd
-                FROM    zangeres';
+                FROM    PoundForPound';
 
         $this->db->query($sql);
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 14 mrt 2023 om 11:17
+-- Gegenereerd op: 3 mrt 2023 om 9:22
 -- Serverversie: 5.7.36
 -- PHP-versie: 8.1.0
 
@@ -18,19 +18,19 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `zangeres`
+-- Database: `PoundForPound`
 --
-CREATE DATABASE IF NOT EXISTS `zangeres` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `zangeres`;
+CREATE DATABASE IF NOT EXISTS `PoundForPound` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `PoundForPound`;
 
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `zangeres`
+-- Tabelstructuur voor tabel `PoundForPound`
 --
 
-DROP TABLE IF EXISTS `zangeres`;
-CREATE TABLE IF NOT EXISTS `zangeres` (
+DROP TABLE IF EXISTS `PoundForPound`;
+CREATE TABLE IF NOT EXISTS `PoundForPound` (
   `Id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `Naam` varchar(100) NOT NULL,
   `Netto/Waarde` smallint(100) NOT NULL,
@@ -41,10 +41,10 @@ CREATE TABLE IF NOT EXISTS `zangeres` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `zangeres`
+-- Gegevens worden geëxporteerd voor tabel `PoundForPound`
 --
 
-INSERT INTO `zangeres` (`Id`, `Naam`, `Netto/Waarde`, `Land`, `Mobiel`, `Leeftijd`) VALUES
+INSERT INTO `PoundForPound` (`Id`, `Naam`, `Netto/Waarde`, `Land`, `Mobiel`, `Leeftijd`) VALUES
 (1, 'Rihanna', 1400, 'Barbados', '+ 1246 2400 1862400', 35),
 (2, 'Rihanna', 1400, 'Barbados', '+ 1246 2400 1862400', 35),
 (3, 'Madonna', 575, 'Verenigde Staten', '+1 3425 18587', 64),

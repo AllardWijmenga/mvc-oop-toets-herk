@@ -1,30 +1,30 @@
 <?php
 
-class zangeres extends BaseController
+class PoundForPound extends BaseController
 {
-    private $zangeresModel;
+    private $PoundForPoundModel;
 
     public function __construct()
     {
-        $this->zangeresModel = $this->model('zangeresModel');
+        $this->PoundForPoundModel = $this->model('PoundForPoundModel');
     }
 
     public function index()
     {
         $data = [
-            'title' => 'Top 5 rijkste zangeressen ter wereld'
+            'title' => 'Top 5 rijkste PoundForPoundsen ter wereld'
         ];
 
-        $this->view('zangeres/index', $data);
+        $this->view('PoundForPound/index', $data);
     }
 
 
-    public function getzangeres($id1=NULL, $id2=NULL) 
+    public function getPoundForPound($id1=NULL, $id2=NULL) 
     {
-        $zangeres = $this->zangeresModel->getzangeres();
+        $PoundForPound = $this->PoundForPoundModel->getPoundForPound();
 
         $tableRows = "";
-        foreach ($zangeres as $value) {
+        foreach ($PoundForPound as $value) {
             $tableRows .= "<tr>
                                 <td>$value->Id</td>
                                 <td>$value->Naam</td>
@@ -36,10 +36,10 @@ class zangeres extends BaseController
         }
 
         $data = [
-            'title' => 'Top 5 rijkste zangeressen ter wereld',
+            'title' => 'Top 5 rijkste PoundForPoundsen ter wereld',
             'tableRows' => $tableRows
         ];
 
-        $this->view('zangeres/getzangeresen', $data);
+        $this->view('PoundForPound/getPoundForPounden', $data);
     }
 }
