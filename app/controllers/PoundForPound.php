@@ -7,6 +7,7 @@ class PoundForPound extends BaseController
     public function __construct()
     {
         $this->PoundForPoundModel = $this->model('PoundForPoundModel');
+        var_dump($this->PoundForPoundModel);
     }
 
     public function index()
@@ -15,7 +16,7 @@ class PoundForPound extends BaseController
             'title' => 'Men Pound-For-Pound top rank UFC'
         ];
 
-        $this->view('PoundForPound/getPoundForPound', $data);
+        $this->view('PoundForPound/getPoundForPounden', $data);
     }
 
 
