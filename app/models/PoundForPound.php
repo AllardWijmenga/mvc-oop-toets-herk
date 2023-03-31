@@ -9,7 +9,7 @@ class PoundForPoundModel
         $this->db = new Database();
     }
 
-    public function getPoundForPounden()
+    public function getPoundForPound()
     {
         $sql = 'SELECT  Id
                        ,Naam

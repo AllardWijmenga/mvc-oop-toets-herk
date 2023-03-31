@@ -13,6 +13,11 @@
         <thead>
             <th>Id</th>
             <th>Naam</th>
+            <th>Rankering</th>
+            <th>Lengte</th>
+            <th>Gewicht</th>
+            <th>Leeftijd</th>
+            <th>WinsByKnockout</th>
         </thead>
         <tbody>
             <?= $data['tableRows']; ?>

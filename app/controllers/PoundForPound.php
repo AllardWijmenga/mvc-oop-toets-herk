@@ -41,6 +41,6 @@ class PoundForPound extends BaseController
             'tableRows' => $tableRows
         ];
 
-        $this->view('PoundForPound/getPoundForPounden', $data);
+        $this->view('PoundForPound/getPoundForPound', $data);
     }
 }
